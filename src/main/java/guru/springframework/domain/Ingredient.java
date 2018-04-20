@@ -22,6 +22,8 @@ public class Ingredient {
 
     @DBRef
     private UnitOfMeasure uom;
+
+    @DBRef
     private Recipe recipe;
 
     public Ingredient() {
