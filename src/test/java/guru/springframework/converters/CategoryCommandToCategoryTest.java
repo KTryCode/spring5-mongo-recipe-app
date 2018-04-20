@@ -23,10 +23,6 @@ public class CategoryCommandToCategoryTest {
         assertNull(conveter.convert(null));
     }
 
-    @Test
-    public void testEmptyObject() throws Exception {
-        assertNotNull(conveter.convert(new CategoryCommand()));
-    }
 
     @Test
     public void convert() throws Exception {
