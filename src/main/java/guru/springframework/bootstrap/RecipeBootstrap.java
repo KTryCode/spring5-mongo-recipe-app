@@ -100,6 +100,7 @@ public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEven
 
         //get UOMs
         Optional<UnitOfMeasure> eachUomOptional = unitOfMeasureRepository.findByDescription("Pint");
+        log.debug(eachUomOptional.toString());
 
         if(!eachUomOptional.isPresent()){
             throw new RuntimeException("Expected UOM Not Found");
