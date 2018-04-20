@@ -99,7 +99,7 @@ public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEven
         List<Recipe> recipes = new ArrayList<>(2);
 
         //get UOMs
-        Optional<UnitOfMeasure> eachUomOptional = unitOfMeasureRepository.findByDescription("Pint");
+        Optional<UnitOfMeasure> eachUomOptional = unitOfMeasureRepository.findByDescription("Each");
         log.debug(eachUomOptional.toString());
 
         if(!eachUomOptional.isPresent()){
